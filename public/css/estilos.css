@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url(menu.css);
+@import url(banner.css);
+@import url(blog.css);
+@import url(info.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+header{
+width: 100%;
+height: 60px;
+background: #333;
+color: #fff;
+/* para que se quede pegado el menu */
+position: fixed;
+top: 0;
+left: 0;
+z-index: 100;
+}
+
+
+.contenedor  {
+    width: 98%;
+    margin: auto;
+
+}
+
+.contact {
+    margin: 10px;
+    background-color: blue;
+}
+
+h1 {
+    float:left;
+    margin: auto;
+}
+
+li {
+    list-style: none;
+}
+
+
+header p .contenedor{
+    display: table;
+}
+
+section {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#Bienvenidos {
+    text-align: center;
+}
+
+footer .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+.copy {
+    font-size: 30px;
+}
+
+
+.sociales {
+    width: 35%;
+    text-align: center;
+    font-size: 12px;
+
+}
+
+.sociales a {
+    color: #333;
+    text-decoration: none;
+} 
+
+@media (min-width:768px){
+    .sociales{
+        width:auto;
+    }
+    footer .contenedor {
+        justify-content: space-between;
+    }
+}
+
+
+@media (min-width:1024px) {
+    .sociales{
+        width: auto;
+    }
+}
+
+
+
+
